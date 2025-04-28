@@ -42,23 +42,26 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-
+![alt text](catfile1.png)
 
 
 cat < file2
 ## OUTPUT
-
+![alt text](catfile2.png)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+![alt text](cmp.png)
  
 comm file1 file2
  ## OUTPUT
+ ![alt text](comm.png)
 
  
 diff file1 file2
 ## OUTPUT
+![alt text](diff.png)
 
 
 #Filters
@@ -82,17 +85,20 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
+![alt text](cutfile11.png)
 
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
+![alt text](cutf1file22.png)
 
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![alt text](cutf2file22.png)
 
 
 cat < newfile 
@@ -107,6 +113,7 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
+![alt text](catnewfile.png)
 
 
 
