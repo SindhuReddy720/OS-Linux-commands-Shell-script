@@ -414,14 +414,14 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![alt text](tarbackup.png)
+![alt text](tarcvfbackup.png)
 
 
 mkdir backupdir
+
+ mv backup.tar backupdir
  
-mv backup.tar backupdir
- 
-tar -tvf backup.tar
+ tar -tvf backup.tar
 ## OUTPUT
 
 
