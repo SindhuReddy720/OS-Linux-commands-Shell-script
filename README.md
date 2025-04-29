@@ -112,6 +112,7 @@ Hello world
 hello world
  
 grep Hello newfile 
+
 ## OUTPUT
 ![alt text](catnewfile.png)
 
