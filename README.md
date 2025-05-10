@@ -719,8 +719,12 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
+
 ##OUTPUT
+
+
 ![alt text](ifnested1.png)
+
 
 # looking for a possible value using elif
 cat elifcheck.sh 
