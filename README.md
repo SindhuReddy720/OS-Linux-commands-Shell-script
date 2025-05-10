@@ -666,8 +666,10 @@ fi
 
 $ chmod 755 iftest.sh
  
-$ ./iftest.sh 
+$ ./iftest.sh
+
 ##OUTPUT
+
 ![alt text](iftest.png)
 
 # check if a file
