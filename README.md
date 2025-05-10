@@ -424,10 +424,12 @@ mkdir backupdir
  
  tar -tvf backup.tar
 ## OUTPUT
+![alt text](tartvfbackup.png)
 
 
 tar -xvf backup.tar
 ## OUTPUT
+![alt text](tarxvfbackup.png)
 
 gzip backup.tar
 
@@ -446,7 +448,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
+![alt text](myscript.png)
  
 cat << stop > herecheck.txt
 ```
@@ -458,6 +460,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+![alt text](catherecheck.png)
 
 
 cat < scriptest.sh 
@@ -496,26 +499,19 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+![alt text](scriptest.png)
 
  
 ls file1
 ## OUTPUT
+![alt text](lsfile1.png)
 
 echo $?
 ## OUTPUT 
-./one
-bash: ./one: Permission denied
- 
-echo $?
-## OUTPUT 
- 
-abcd
- 
-echo $?
- ## OUTPUT
+![alt text](echo$.png)
 
 
- 
+
 # mis-using string comparisons
 
 cat < strcomp.sh 
@@ -545,13 +541,14 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-
+![alt text](strcomp1.png)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+![alt text](strcomp2.png)
 
 
 # check file ownership
@@ -579,6 +576,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![alt text](psswdperm.png)
 
 # check if with file location
 cat>ifnested.sh 
@@ -625,6 +623,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+![alt text](ifnested.png)
 
 
 
@@ -669,6 +668,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+![alt text](iftest.png)
 
 # check if a file
 cat > ifnested.sh 
@@ -718,6 +718,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
+![alt text](ifnested1.png)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -746,6 +747,8 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+![alt text](elifcheck.png)
+
 
 
 # testing compound comparisons
@@ -762,6 +765,8 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![alt text](ifcompound.png)
+
 
 # using the case command
 cat >casecheck.sh 
@@ -781,6 +786,10 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
+
+## OUTPUT
+![alt text](casecheck.png)
+
  
 cat > whiletest
 ```bash
@@ -796,6 +805,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
+
+## OUTPUT
+![alt text](whiletest.png)
  
  
 cat untiltest.sh 
@@ -810,6 +822,8 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
+ ## OUTPUT
+ ![alt text](untiltest.png)
  
  
 cat forin1.sh 
@@ -823,6 +837,9 @@ done
  ```
  
 $ chmod 755 forin1.sh
+
+## OUTPUT
+![alt text](forin1.png)
  
  
 cat forin2.sh 
@@ -836,19 +853,11 @@ done
  ```
  
 $ chmod 755 forin2.sh
+
+## OUTPUT
+![alt text](forin2.png)
  
-cat forin2.sh 
-```bash
-\#!/bin/bash
-\# another example of how not to use the for command
-for test in I don't know if this'll work
-do
-echo “word:$test”
-done
-```
-$ chmod 755 forin2.sh
- 
-$ ./forin2.sh 
+
  
 cat forin3.sh 
 ```bash
@@ -860,19 +869,11 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
-cat forin1.sh 
-```bash
-#!/bin/bash
-# basic for command
-for test in Alabama Alaska Arizona Arkansas California Colorado
-do
-echo The next state is $test
-done
-```
-$ chmod 755 forin1.sh
 
 ## OUTPUT
+![alt text](forin3.png)
+ 
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -894,6 +895,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
+
 
 
 cat forctype.sh 
